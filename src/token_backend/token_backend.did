@@ -1,0 +1,5 @@
+type Token = record { id : nat32; balance : nat64; owner : principal };
+service : () -> {
+  read_token : () -> (Token) query;
+  update_token : (nat64) -> (Token);
+}
